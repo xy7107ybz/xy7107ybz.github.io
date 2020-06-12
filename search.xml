@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First Blog</title>
+    <title>MarkDown练习笔记</title>
     <url>/2020/06/12/first_blog/</url>
-    <content><![CDATA[<h2 id="MarkDown练习笔记"><a href="#MarkDown练习笔记" class="headerlink" title="MarkDown练习笔记"></a>MarkDown练习笔记</h2><h3 id="Text文档"><a href="#Text文档" class="headerlink" title="Text文档"></a>Text文档</h3><blockquote>
-<p>hello 引用样式</p>
-</blockquote>
+    <content><![CDATA[<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
 <p>有一种爱情是一触即发。看到Typora的第一眼，我就爱上了它。它没有专业软件那么复杂而难以上手的功能，却也没有为了简洁而妥协到难以使用，它的每一寸肌肤都恰到好处，与它相处的每一刻都十分愉悦。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="Java代码块"><a href="#Java代码块" class="headerlink" title="Java代码块"></a>Java代码块</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<p>无序列表（减号+空格）</p>
-<ul>
+<h3 id="无序列表（减号-空格）"><a href="#无序列表（减号-空格）" class="headerlink" title="无序列表（减号+空格）"></a>无序列表（减号+空格）</h3><ul>
 <li>无序列表</li>
 <li>无序列表</li>
 <li>无序列表</li>
 </ul>
-<p>有序列表（数字+英文句号+空格）</p>
-<ol>
-<li>有序列表</li>
-<li>有序列表</li>
-<li>有序列表</li>
+<h3 id="有序列表（数字-英文句号-空格）"><a href="#有序列表（数字-英文句号-空格）" class="headerlink" title="有序列表（数字+英文句号+空格）"></a>有序列表（数字+英文句号+空格）</h3><ol>
+<li><p>有序列表</p>
+</li>
+<li><p>有序列表</p>
+</li>
+<li><p>有序列表</p>
+</li>
 </ol>
-<p>####插入图片：感叹号+[加载失败时显示文字]+（图片链接）</p>
-<p>![喵] (<a href="http://img1.imgtn.bdimg.com/it/u=1141259048,554497535&amp;fm=26&amp;gp=0.jpg" target="_blank" rel="noopener">http://img1.imgtn.bdimg.com/it/u=1141259048,554497535&amp;fm=26&amp;gp=0.jpg</a>)</p>
-<p>####插入超链接：[超链接显示名]+（网页链接）<br><a href="http://www.baidu.com" target="_blank" rel="noopener">baidu</a></p>
-<p><strong>加粗</strong><br><em>斜体</em></p>
-<center><font face="黑体" color="red" size="28">字体样式、颜色、大小、位置修改</font></center>
-<p align="right">段落居右</p>
+<h3 id="插入图片：感叹号-加载失败时显示文字-（图片链接）"><a href="#插入图片：感叹号-加载失败时显示文字-（图片链接）" class="headerlink" title="插入图片：感叹号+[加载失败时显示文字]+（图片链接）"></a>插入图片：感叹号+[加载失败时显示文字]+（图片链接）</h3><p>![喵] (<a href="http://img1.imgtn.bdimg.com/it/u=1141259048,554497535&amp;fm=26&amp;gp=0.jpg" target="_blank" rel="noopener">http://img1.imgtn.bdimg.com/it/u=1141259048,554497535&amp;fm=26&amp;gp=0.jpg</a>)</p>
+<h3 id="插入超链接：-超链接显示名-（网页链接）"><a href="#插入超链接：-超链接显示名-（网页链接）" class="headerlink" title="插入超链接：[超链接显示名]+（网页链接）"></a>插入超链接：[超链接显示名]+（网页链接）</h3><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<h3 id="字体倾斜、加粗、倾斜加粗"><a href="#字体倾斜、加粗、倾斜加粗" class="headerlink" title="字体倾斜、加粗、倾斜加粗"></a>字体倾斜、加粗、倾斜加粗</h3><p><em>倾斜</em></p>
+<p><strong>加粗</strong></p>
+<p><strong><em>倾斜加粗</em></strong></p>
+<h3 id="分割线-（-或—）"><a href="#分割线-（-或—）" class="headerlink" title="分割线 （*** 或—）"></a>分割线 （*** 或—）</h3><hr>
+<hr>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="利用html修改字体样式"><a href="#利用html修改字体样式" class="headerlink" title="利用html修改字体样式"></a>利用html修改字体样式</h3><center><font face="黑体" color="red" size="15">字体样式、颜色、大小、位置修改</font></center>
+<p align="center">段落居中</p>
+
+
+
 ]]></content>
       <categories>
         <category>前端</category>
       </categories>
       <tags>
-        <tag>-导航 -分享</tag>
+        <tag>-Markdown -share</tag>
       </tags>
   </entry>
   <entry>
