@@ -1,11 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JAVA基础知识</title>
+    <url>/2020/06/13/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<blockquote>
+<p>急着赶路，会错过沿途的风景，<br>放慢脚步，享受成长的每一步。</p>
+</blockquote>
+<hr>
+<h3 id="1、Java语言简介"><a href="#1、Java语言简介" class="headerlink" title="1、Java语言简介"></a>1、Java语言简介</h3><p>Sun公司于1995年研发Java，创始人之一是被喻为Java之父的James Gosling（詹姆斯·高斯林）。2009年，Sun公司被Oracle（甲骨文）公司收购，Java的官网也随之更改为<a href="http://www.oracle.com" target="_blank" rel="noopener">www.oracle.com</a></p>
+<p>Java语言的核心优势是允许跨平台使用。其原理是利用Java编辑器将文件编译成与平台无关的字节码文件（后缀为.class），然后通过在不同的操作系统上安装相应的Java虚拟机（JVM），从而使Java能顺利的在多种平台顺利运行。简而言之，一次编译，多处使用。</p>
+<p>Java最初版本为Java 1.0，发展到1.5时有了重大的更新，进入发展快车道，因此更名为Java 5.0。尽管现在Java版本已经到了Java 13，但版本过高会加大客户的使用成本，为了方便客户使用，目前大多数企业以Java 8.0为主，因为Java 8.0更新了许多新的特性，处于承上启下的版本。不过，目前学习阶段，推荐以Java 11为主。 </p>
+<p>JDK为JAVA开发环境，JRE为Java运行环境，JVM为Java虚拟机，三者的关系如图：</p>
+<img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613191621278.png" alt="image-20200613191621278" style="zoom: 67%;" />
+
+
+
+<hr>
+<h3 id="2、入门经典程序——Hello-World"><a href="#2、入门经典程序——Hello-World" class="headerlink" title="2、入门经典程序——Hello World"></a>2、入门经典程序——Hello World</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintHelloWorld</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="3、注释"><a href="#3、注释" class="headerlink" title="3、注释"></a>3、注释</h3><p>注释是用来解释代码，生成字节码文件时会被抛弃。合理使用注释，能够提升代码的可读性。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	三种注释的使用方式：</span></span><br><span class="line"><span class="comment">//	单行注释</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">/*	多行注释	*/</span>	</span><br><span class="line"><span class="keyword">int</span> num <span class="comment">/*	多行注释，可在代码间使用，但很少这么用  */</span>= <span class="number">10</span>;    </span><br><span class="line"></span><br><span class="line"><span class="comment">/**	文档注释，用于生成API	*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="4、标识符"><a href="#4、标识符" class="headerlink" title="4、标识符"></a>4、标识符</h3><h4 id="【常见骆驼的关键组成部分是大小两驼峰】"><a href="#【常见骆驼的关键组成部分是大小两驼峰】" class="headerlink" title="【常见骆驼的关键组成部分是大小两驼峰】"></a>【常见骆驼的关键组成部分是大小两驼峰】</h4> <a id="more"></a> 
+
+<p>![骆驼])(骆驼图案链接)</p>
+<ol>
+<li><p>常：常量名所有字母大写，字母与字母间用_分隔</p>
+</li>
+<li><p>见：标识符命名时尽可能见名知义</p>
+</li>
+<li><p>关键：标识符不能以JAVA保留的关键字命名(Java总共五十关键字不需要刻意去背，）</p>
+</li>
+<li><p>组成：由字母、数字、下划线_、美元符号$组成，需注意不能以数字开头</p>
+</li>
+<li><p>大小：标识符区分大小写，如Cat 和 cat代表不同的标识符</p>
+</li>
+<li><p>大驼峰原则：【类名】每个单词首字母均大写，其余字母小写</p>
+</li>
+<li><p>小驼峰原则：【变量、方法名】第一个单词全小写，从第二个单词开始，首字母大写，其余字母小写</p>
+</li>
+</ol>
+<hr>
+<h3 id="5、Java关键字"><a href="#5、Java关键字" class="headerlink" title="5、Java关键字"></a>5、Java关键字</h3><p>关键字是具有特殊含义的字母，其中true、false、null为含有特殊含义的标记，goto、const是Java中未使用到的关键字。关键字不需要刻意去计，使用多了自然会记得。</p>
+<p>常用关键字：</p>
+<img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613193035488.png" alt="常用关键字" style="zoom:50%;" />
+
+<p>所有关键字：</p>
+<img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613193148366.png" alt="所有关键字" style="zoom: 80%;" />
+
+
+
+<hr>
+<h3 id="6、数据类型"><a href="#6、数据类型" class="headerlink" title="6、数据类型"></a>6、数据类型</h3><p>基本数据类型遵循值传递，传递的是值的副本。引用数据类型也遵循值传递，但传递的是值的地址。</p>
+<p><img src="C:%5CUsers%5Cxy%5CDesktop%5C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg" alt="数据类型"></p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613194819568.png" alt="取值范围"></p>
+<hr>
+<h3 id="7、数据类型的转换（自动or强制）"><a href="#7、数据类型的转换（自动or强制）" class="headerlink" title="7、数据类型的转换（自动or强制）"></a>7、数据类型的转换（自动or强制）</h3><p>自动转换：容量小的数据类型，会自动转换成容量大的数据类型。</p>
+<p>强制转换：容量大的数据类型，不会自动转换成容量小的数据类型，需要进行强制转换，但是强制转换会可能会导致数据丢失。<img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613195333387.png" alt="image-20200613195333387"></p>
+<p>注意事项：</p>
+<ul>
+<li>若无特别说明，整数默认为int类型；</li>
+<li>若无特别说明，小数默认为double类型；</li>
+<li>字符char参与计算时，会自动转换成该字符对应的ASCII码，如’a’对应97。</li>
+<li>与String类型进行+操作，最终会得到一个字符串。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//强制转换</span></span><br><span class="line"><span class="keyword">byte</span> b = (<span class="keyword">byte</span>) <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">float</span> f1 = <span class="number">1.0F</span>;</span><br><span class="line"><span class="keyword">float</span> f2 = (<span class="keyword">float</span>)<span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">System.out.print(<span class="number">1</span>+<span class="number">2</span>+<span class="string">"a"</span>); <span class="comment">// "3a"</span></span><br><span class="line">System.out.print(<span class="number">1</span>+<span class="string">"a"</span>+<span class="number">2</span>); <span class="comment">// "1a2"</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="8、常量与变量的区别"><a href="#8、常量与变量的区别" class="headerlink" title="8、常量与变量的区别"></a>8、常量与变量的区别</h3><p>常量：由public static final修饰，只能赋值一次，在程序运行过程中不会发生改变。</p>
+<p>变量：由private、default、protected、public修饰，能够进行多次赋值，在程序运行过程中可以发生改变。</p>
+<p>变量的三种赋值方式：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式1：定义并赋值</span></span><br><span class="line"><span class="keyword">int</span> a;</span><br><span class="line">a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//方式2：先定义，后赋值</span></span><br><span class="line"><span class="keyword">int</span> b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//方式3：同时定义多个（不常用）</span></span><br><span class="line"><span class="keyword">int</span> c=<span class="number">10</span>,d=<span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<hr>
+<h3 id="3、访问控制符"><a href="#3、访问控制符" class="headerlink" title="3、访问控制符"></a>3、访问控制符<img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613101742851.png" alt="image-20200613101742851"></h3><hr>
+<hr>
+<h3 id="5、方法"><a href="#5、方法" class="headerlink" title="5、方法"></a>5、方法</h3><h4 id="方法的重载条件："><a href="#方法的重载条件：" class="headerlink" title="方法的重载条件："></a>方法的重载条件：</h4><p>在同一个类中，方法名相同，形参列表不同</p>
+<p>明确返回值类型、明确参数</p>
+]]></content>
+  </entry>
+  <entry>
     <title>MarkDown练习笔记</title>
     <url>/2020/06/12/first_blog/</url>
     <content><![CDATA[<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
 <p>有一种爱情是一触即发。看到Typora的第一眼，我就爱上了它。它没有专业软件那么复杂而难以上手的功能，却也没有为了简洁而妥协到难以使用，它的每一寸肌肤都恰到好处，与它相处的每一刻都十分愉悦。</p>
 </blockquote>
+ <a id="more"></a> 
+
 <h3 id="Java代码块"><a href="#Java代码块" class="headerlink" title="Java代码块"></a>Java代码块</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -33,8 +125,6 @@
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="利用html修改字体样式"><a href="#利用html修改字体样式" class="headerlink" title="利用html修改字体样式"></a>利用html修改字体样式</h3><center><font face="黑体" color="red" size="15">字体样式、颜色、大小、位置修改</font></center>
 <p align="center">段落居中</p>
 
-
-
 ]]></content>
       <categories>
         <category>前端</category>
@@ -50,7 +140,7 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h3><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
@@ -60,5 +150,11 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>前端知识</title>
+    <url>/2020/06/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<hr>
+<h2 id="Html"><a href="#Html" class="headerlink" title="Html"></a>Html</h2><h3 id="Html中，空格有专门的编码，输入-amp-nbsp代表一个空格"><a href="#Html中，空格有专门的编码，输入-amp-nbsp代表一个空格" class="headerlink" title="Html中，空格有专门的编码，输入&amp;nbsp代表一个空格"></a>Html中，空格有专门的编码，输入&amp;nbsp代表一个空格</h3>]]></content>
   </entry>
 </search>
