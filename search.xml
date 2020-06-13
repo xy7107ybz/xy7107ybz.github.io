@@ -21,13 +21,15 @@
 
 
 <hr>
+<a id="more"></a>
+
 <h3 id="3、注释"><a href="#3、注释" class="headerlink" title="3、注释"></a>3、注释</h3><p>注释是用来解释代码，生成字节码文件时会被抛弃。合理使用注释，能够提升代码的可读性。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	三种注释的使用方式：</span></span><br><span class="line"><span class="comment">//	单行注释</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">/*	多行注释	*/</span>	</span><br><span class="line"><span class="keyword">int</span> num <span class="comment">/*	多行注释，可在代码间使用，但很少这么用  */</span>= <span class="number">10</span>;    </span><br><span class="line"></span><br><span class="line"><span class="comment">/**	文档注释，用于生成API	*/</span></span><br></pre></td></tr></table></figure>
 
 
 
 <hr>
-<h3 id="4、标识符"><a href="#4、标识符" class="headerlink" title="4、标识符"></a>4、标识符</h3><h4 id="【常见骆驼的关键组成部分是大小两驼峰】"><a href="#【常见骆驼的关键组成部分是大小两驼峰】" class="headerlink" title="【常见骆驼的关键组成部分是大小两驼峰】"></a>【常见骆驼的关键组成部分是大小两驼峰】</h4> <a id="more"></a> 
+<h3 id="4、标识符"><a href="#4、标识符" class="headerlink" title="4、标识符"></a>4、标识符</h3><h4 id="【常见骆驼的关键组成部分是大小两驼峰】"><a href="#【常见骆驼的关键组成部分是大小两驼峰】" class="headerlink" title="【常见骆驼的关键组成部分是大小两驼峰】"></a>【常见骆驼的关键组成部分是大小两驼峰】</h4> <!-- more --> 
 
 <p>![骆驼])(骆驼图案链接)</p>
 <ol>
