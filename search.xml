@@ -67,4 +67,152 @@
         <tag>-Markdown -share</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JAVA基础知识</title>
+    <url>/2020/06/13/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<blockquote>
+<p>急着赶路，会错过沿途的风景，<br>放慢脚步，享受成长的每一步。</p>
+</blockquote>
+<hr>
+<h3 id="1、Java语言简介"><a href="#1、Java语言简介" class="headerlink" title="1、Java语言简介"></a>1、Java语言简介</h3><p>Sun公司于1995年研发Java，创始人之一是被喻为Java之父的James Gosling（詹姆斯·高斯林）。2009年，Sun公司被Oracle（甲骨文）公司收购，Java的官网也随之更改为<a href="http://www.oracle.com" target="_blank" rel="noopener">www.oracle.com</a></p>
+<p>Java语言的核心优势是允许跨平台使用。其原理是利用Java编辑器将文件编译成与平台无关的字节码文件（后缀为.class），然后通过在不同的操作系统上安装相应的Java虚拟机（JVM），从而使Java能顺利的在多种平台顺利运行。简而言之，一次编译，多处使用。</p>
+<a id="more"></a>
+
+<p>Java最初版本为Java 1.0，发展到1.5时有了重大的更新，进入发展快车道，因此更名为Java 5.0。尽管现在Java版本已经到了Java 13，但版本过高会加大客户的使用成本，为了方便客户使用，目前大多数企业以Java 8.0为主，因为Java 8.0更新了许多新的特性，处于承上启下的版本。不过，目前学习阶段，推荐以Java 11为主。 </p>
+<p>JDK为JAVA开发环境，JRE为Java运行环境，JVM为Java虚拟机，三者的关系如图：</p>
+<img src="C:\Users\xy\Desktop\image-20200613191621278.png" alt="image-20200613191621278" style="zoom: 67%;" />
+
+
+
+<hr>
+<h3 id="2、入门经典程序——Hello-World"><a href="#2、入门经典程序——Hello-World" class="headerlink" title="2、入门经典程序——Hello World"></a>2、入门经典程序——Hello World</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintHelloWorld</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<!--more-->
+
+<h3 id="3、注释"><a href="#3、注释" class="headerlink" title="3、注释"></a>3、注释</h3><p>注释是用来解释代码，生成字节码文件时会被抛弃。合理使用注释，能够提升代码的可读性。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	三种注释的使用方式：</span></span><br><span class="line"><span class="comment">//	单行注释</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">/*	多行注释	*/</span>	</span><br><span class="line"><span class="keyword">int</span> num <span class="comment">/*	多行注释，可在代码间使用，但很少这么用  */</span>= <span class="number">10</span>;    </span><br><span class="line"></span><br><span class="line"><span class="comment">/**	文档注释，用于生成API	*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="4、标识符"><a href="#4、标识符" class="headerlink" title="4、标识符"></a>4、标识符</h3><h4 id="【常见骆驼的关键组成部分是大小两驼峰】"><a href="#【常见骆驼的关键组成部分是大小两驼峰】" class="headerlink" title="【常见骆驼的关键组成部分是大小两驼峰】"></a>【常见骆驼的关键组成部分是大小两驼峰】</h4> <!-- more --> 
+
+<p>![骆驼])(骆驼图案链接)</p>
+<ol>
+<li><p>常：常量名所有字母大写，字母与字母间用_分隔</p>
+</li>
+<li><p>见：标识符命名时尽可能见名知义</p>
+</li>
+<li><p>关键：标识符不能以JAVA保留的关键字命名(Java总共五十关键字不需要刻意去背，）</p>
+</li>
+<li><p>组成：由字母、数字、下划线_、美元符号$组成，需注意不能以数字开头</p>
+</li>
+<li><p>大小：标识符区分大小写，如Cat 和 cat代表不同的标识符</p>
+</li>
+<li><p>大驼峰原则：【类名】每个单词首字母均大写，其余字母小写</p>
+</li>
+<li><p>小驼峰原则：【变量、方法名】第一个单词全小写，从第二个单词开始，首字母大写，其余字母小写</p>
+</li>
+</ol>
+<hr>
+<h3 id="5、Java关键字"><a href="#5、Java关键字" class="headerlink" title="5、Java关键字"></a>5、Java关键字</h3><p>关键字是具有特殊含义的字母，其中true、false、null为含有特殊含义的标记，goto、const是Java中未使用到的关键字。关键字不需要刻意去计，使用多了自然会记得。</p>
+<p>常用关键字：</p>
+<img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613193035488.png" alt="常用关键字" style="zoom:50%;" />
+
+<p>所有关键字：</p>
+<img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613193148366.png" alt="所有关键字" style="zoom: 80%;" />
+
+
+
+<hr>
+<h3 id="6、数据类型"><a href="#6、数据类型" class="headerlink" title="6、数据类型"></a>6、数据类型</h3><p>基本数据类型遵循值传递，传递的是值的副本。引用数据类型也遵循值传递，但传递的是值的地址。</p>
+<p><img src="C:%5CUsers%5Cxy%5CDesktop%5C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg" alt="数据类型"></p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613194819568.png" alt="取值范围"></p>
+<hr>
+<h3 id="7、数据类型的转换（自动or强制）"><a href="#7、数据类型的转换（自动or强制）" class="headerlink" title="7、数据类型的转换（自动or强制）"></a>7、数据类型的转换（自动or强制）</h3><p>自动转换：容量小的数据类型，会自动转换成容量大的数据类型。</p>
+<p>强制转换：容量大的数据类型，不会自动转换成容量小的数据类型，需要进行强制转换，但是强制转换会可能会导致数据丢失。<img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613195333387.png" alt="image-20200613195333387"></p>
+<p>注意事项：</p>
+<ul>
+<li>若无特别说明，整数默认为int类型；</li>
+<li>若无特别说明，小数默认为double类型；</li>
+<li>字符char参与计算时，会自动转换成该字符对应的ASCII码，如’a’对应97。</li>
+<li>与String类型进行+操作，最终会得到一个字符串。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//强制转换</span></span><br><span class="line"><span class="keyword">byte</span> b = (<span class="keyword">byte</span>) <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">float</span> f1 = <span class="number">1.0F</span>;</span><br><span class="line"><span class="keyword">float</span> f2 = (<span class="keyword">float</span>)<span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">System.out.print(<span class="number">1</span>+<span class="number">2</span>+<span class="string">"a"</span>); <span class="comment">// "3a"</span></span><br><span class="line">System.out.print(<span class="number">1</span>+<span class="string">"a"</span>+<span class="number">2</span>); <span class="comment">// "1a2"</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="8、常量与变量的区别"><a href="#8、常量与变量的区别" class="headerlink" title="8、常量与变量的区别"></a>8、常量与变量的区别</h3><p>常量：由public static final修饰，只能赋值一次，在程序运行过程中不会发生改变。</p>
+<p>变量：由private、default、protected、public修饰，能够进行多次赋值，在程序运行过程中可以发生改变。</p>
+<p>变量的三种赋值方式：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//核心： 数据类型 变量名 = 值;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//方式1：定义并赋值</span></span><br><span class="line"><span class="keyword">int</span> a;</span><br><span class="line">a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//方式2：先定义，后赋值</span></span><br><span class="line"><span class="keyword">int</span> b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//方式3：同时定义多个（不常用）</span></span><br><span class="line"><span class="keyword">int</span> c=<span class="number">10</span>,d=<span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="9-变量的作用域"><a href="#9-变量的作用域" class="headerlink" title="9.变量的作用域"></a>9.变量的作用域</h3><pre><code>1. 局部变量：在方法或语句块中定义的变量，其作用域为该方法或语句块内。必须先声明、赋值后使用。
+ 2. 成员变量（实例变量）：方法外部、类的内部定义的变量，其作用域为整个对象。若没有进行赋值，会自动初始化为默认值。（默认值：int为0、double为0.0、char为‘\u0000’ 、boolean为false)
+ 3. 静态变量：以static 修饰的变量，定义在类中，存放于堆的方法区里，作用域从类的加载到类的卸载。</code></pre><hr>
+<h3 id="9、访问控制符"><a href="#9、访问控制符" class="headerlink" title="9、访问控制符"></a>9、访问控制符<img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613101742851.png" alt="image-20200613101742851"></h3><hr>
+<h3 id="10、运算符"><a href="#10、运算符" class="headerlink" title="10、运算符"></a>10、运算符</h3><img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200614201912842.png" alt="image-20200614201912842" style="zoom:50%;" />
+
+<p>注意事项：</p>
+<ol>
+<li><p>条件运算符是==，使用时注意不要写成=</p>
+</li>
+<li><p>逻辑运算符一般使用&amp;&amp;（短路与）和||（短路或），很少使用&amp;（逻辑与）和|（逻辑或）。因为逻辑与和逻辑或能够运算提升效率。</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 表达式1 &amp;&amp; 表达式2		只要表达式1为false，整体的结果为false，表达式2会直接被忽略。</span></span><br><span class="line"><span class="comment">// 表达式1 || 表达式2		只要表达式1为true，整体的结果为true，表达式2会直接被忽略。</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>拓展赋值运算符隐含了强制转换</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">short</span> s1 = <span class="number">1</span>;</span><br><span class="line">s1 += <span class="number">1</span>;	<span class="comment">//正常输出（推荐写法）</span></span><br><span class="line"></span><br><span class="line">s2 = s2 + <span class="number">1</span>;	<span class="comment">//会报错，因为1默认为int类型，需手动进行强制转换</span></span><br><span class="line">s2 = (<span class="keyword">byte</span>)(s2 + <span class="number">1</span>)	<span class="comment">//虽然不会报错，但强制转换可能导致数据丢失，一般不建议这么写</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>三元运算符使用时必须有值返回</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> b = <span class="number">2</span>;</span><br><span class="line">System.out.println(a &gt; b ? <span class="string">'a'</span> : <span class="string">'b'</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<hr>
+<h3 id="10、方法"><a href="#10、方法" class="headerlink" title="10、方法"></a>10、方法</h3><h4 id="方法的重载条件："><a href="#方法的重载条件：" class="headerlink" title="方法的重载条件："></a>方法的重载条件：</h4><p>在同一个类中，方法名相同，形参列表不同</p>
+<p>明确返回值类型、明确参数列表（形参的数据类型、形参的个数）</p>
+<p>注意:</p>
+<p>方法体中的返回值类型需要与方法定义时的返回值类型一致</p>
+<p>void时无返回值，此时return作为方法的结束</p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200614084205872.png" alt="image-20200614084205872"></p>
+<p>增加断点、运行断点、步进、停止Debug、删除断点、批量删除断点</p>
+<p>光标停留在某一行，代表该行即将执行Debug，需要再按一次步进才会执行</p>
+<p>Debug模式可以清晰的看到循环的过程</p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200614094319604.png" alt="image-20200614094319604"></p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200614095707278.png" alt="image-20200614095707278"></p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200614195128720.png" alt="image-20200614195128720"></p>
+<p>Debug模块运行时，正在运行的方法会出现在预览区</p>
+<p>手动导包</p>
+<p>快捷键导包alt + enter </p>
+<p>自动导包</p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200614142113299.png" alt="image-20200614142113299"></p>
+<p>IDEA小技巧</p>
+<p><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200614085954220.png" alt="image-20200614085954220"></p>
+<p><img src="C:%5CUsers%5Cxy%5CDesktop%5C%E5%9B%BE%E7%89%872.png" alt="图片2"></p>
+<p>new Round. 自动创建方法</p>
+<p>待实现功能：</p>
+<ol>
+<li><p>通过数组绘制基础图案：如爱心、星星。</p>
+<p>初步思路：初始化一个数组，结合for循环，根据一定的规律进行替换，从而形成指定的图案。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
 </search>
