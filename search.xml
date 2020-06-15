@@ -79,11 +79,7 @@
 <a id="more"></a>
 
 <p>Java最初版本为Java 1.0，发展到1.5时有了重大的更新，进入发展快车道，因此更名为Java 5.0。尽管现在Java版本已经到了Java 13，但版本过高会加大客户的使用成本，为了方便客户使用，目前大多数企业以Java 8.0为主，因为Java 8.0更新了许多新的特性，处于承上启下的版本。不过，目前学习阶段，推荐以Java 11为主。 </p>
-<p>JDK为JAVA开发环境，JRE为Java运行环境，JVM为Java虚拟机，三者的关系如图：</p>
-<img src="C:\Users\xy\Desktop\image-20200613191621278.png" alt="image-20200613191621278" style="zoom: 67%;" />
-
-
-
+<p>JDK为JAVA开发环境，JRE为Java运行环境，JVM为Java虚拟机</p>
 <hr>
 <h3 id="2、【练习】-Hello-World"><a href="#2、【练习】-Hello-World" class="headerlink" title="2、【练习】    Hello World"></a>2、【练习】    Hello World</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//入门经典程序</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintHelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -124,10 +120,7 @@
 <img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613193035488.png" alt="常用关键字" style="zoom:50%;" />
 
 <p>所有关键字：</p>
-<img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200613193148366.png" alt="所有关键字" style="zoom: 80%;" />
-
-
-
+<p><img src="F:%5Ccode%5Chexo%5C%E5%9B%BE%E7%89%87%E5%AD%98%E5%82%A8%5C%E6%89%80%E6%9C%89%E5%85%B3%E9%94%AE%E5%AD%97.jpg" alt="所有关键字"></p>
 <hr>
 <h3 id="6、数据类型"><a href="#6、数据类型" class="headerlink" title="6、数据类型"></a>6、数据类型</h3><p>基本数据类型遵循值传递，传递的是值的副本。引用数据类型也遵循值传递，但传递的是值的地址。</p>
 <p><img src="F:%5Ccode%5Chexo%5C%E5%9B%BE%E7%89%87%E5%AD%98%E5%82%A8%5C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt="数据类型"></p>
@@ -164,7 +157,7 @@
 
 
 <hr>
-<h3 id="10、访问控制符"><a href="#10、访问控制符" class="headerlink" title="10、访问控制符"></a>10、访问控制符<img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613101742851.png" alt="image-20200613101742851"></h3><hr>
+<h3 id="10、访问控制符"><a href="#10、访问控制符" class="headerlink" title="10、访问控制符"></a>10、访问控制符</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="C:%5CUsers%5Cxy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200613101742851.png" alt="image-20200613101742851"></h3><hr>
 <h3 id="11、运算符"><a href="#11、运算符" class="headerlink" title="11、运算符"></a>11、运算符</h3><h4 id="分类"><a href="#分类" class="headerlink" title="分类:"></a>分类:</h4><img src="C:\Users\xy\AppData\Roaming\Typora\typora-user-images\image-20200614201912842.png" alt="image-20200614201912842" style="zoom:50%;" />
 
 <h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点:"></a>知识点:</h4><ol>
