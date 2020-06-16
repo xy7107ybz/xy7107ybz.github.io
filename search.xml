@@ -269,8 +269,14 @@
 ]]></content>
   </entry>
   <entry>
-    <title>MarkDown练习笔记</title>
-    <url>/2020/06/12/first_blog/</url>
+    <title>前端知识</title>
+    <url>/2020/06/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<hr>
+<h2 id="Html"><a href="#Html" class="headerlink" title="Html"></a>Html</h2><h3 id="Html中，空格有专门的编码，输入-amp-nbsp代表一个空格"><a href="#Html中，空格有专门的编码，输入-amp-nbsp代表一个空格" class="headerlink" title="Html中，空格有专门的编码，输入&amp;nbsp代表一个空格"></a>Html中，空格有专门的编码，输入&amp;nbsp代表一个空格</h3>]]></content>
+  </entry>
+  <entry>
+    <title>MarkDown学习笔记</title>
+    <url>/2020/06/12/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
 <p>有一种爱情是一触即发。看到Typora的第一眼，我就爱上了它。它没有专业软件那么复杂而难以上手的功能，却也没有为了简洁而妥协到难以使用，它的每一寸肌肤都恰到好处，与它相处的每一刻都十分愉悦。</p>
 </blockquote>
@@ -302,7 +308,6 @@
 <hr>
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="利用html修改字体样式"><a href="#利用html修改字体样式" class="headerlink" title="利用html修改字体样式"></a>利用html修改字体样式</h3><center><font face="黑体" color="red" size="15">字体样式、颜色、大小、位置修改</font></center>
 <p align="center">段落居中</p>
-
 ]]></content>
       <categories>
         <category>前端</category>
@@ -310,11 +315,5 @@
       <tags>
         <tag>-Markdown -share</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>前端知识</title>
-    <url>/2020/06/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<hr>
-<h2 id="Html"><a href="#Html" class="headerlink" title="Html"></a>Html</h2><h3 id="Html中，空格有专门的编码，输入-amp-nbsp代表一个空格"><a href="#Html中，空格有专门的编码，输入-amp-nbsp代表一个空格" class="headerlink" title="Html中，空格有专门的编码，输入&amp;nbsp代表一个空格"></a>Html中，空格有专门的编码，输入&amp;nbsp代表一个空格</h3>]]></content>
   </entry>
 </search>
