@@ -212,7 +212,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-16 09:27:24" itemprop="dateModified" datetime="2020-06-16T09:27:24+08:00">2020-06-16</time>
+                <time title="修改时间：2020-06-19 16:25:08" itemprop="dateModified" datetime="2020-06-19T16:25:08+08:00">2020-06-19</time>
               </span>
 
           
@@ -226,14 +226,93 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>急着赶路，会错过沿途的风景，<br>放慢脚步，享受成长的每一步。</p>
+          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>Less is more</p>
+<p>亲手加工过的知识更易记住。</p>
+<p>建立知识体系，能够提升吸收新知识的速度。</p>
+<p>敲代码实战是学习编程最快的方法，以敲坏键盘为人生目标！</p>
 </blockquote>
+<hr>
+<h3 id="0、准备工作"><a href="#0、准备工作" class="headerlink" title="0、准备工作"></a>0、准备工作</h3><h4 id="JDK和IDEA下载安装"><a href="#JDK和IDEA下载安装" class="headerlink" title="JDK和IDEA下载安装"></a>JDK和IDEA下载安装</h4><p>Notepad++下载（作为文档打开工具，比普通记事本多行号功能）</p>
+<p>JDK下载<a href="http://www.oracle.com" target="_blank" rel="noopener">www.oracle.com</a></p>
+<p>IDEA下载：<a href="https://www.jetbrains.com.idea" target="_blank" rel="noopener">https://www.jetbrains.com.idea</a></p>
+<p>存放目录：IdeaProject  注意目录只是存放路径，不属于程序单位。<br>        项目：Project        一个项目    示例：JavaSeCode<br>                模块：module    多个模块    示例：idea_test<br>                        包：package        多个包    示例：com.itheima.test<br>                                代码：“.java”文件    多个代码    示例：HelloWorld.java</p>
+<p>修改IDEA字体：File-&gt;Settings-&gt;Editor-&gt;Font-&gt;Size</p>
+<h4 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h4><p>1、环境变量修改位置：右键我的电脑—属性—高级系统设置—高级—环境变量—系统变量</p>
+<p>2、添加JAVA_HOME，变量值为jdk所在文件夹（若有多个JDK，后续可通过修改JAVA_HOME进行切换）</p>
+<p>3、在PATH中添加%JAVA_HOME%\bin;%JAVA_HOME%\bin\JRE;    （JDK8的有专门的JRE文件夹，所以需要这么设置，为了方便后续切换JDK，这两个路径都需要加）注意放在最前面，避免系统先找安装时默认的路径。这里的“%”叫做通配符</p>
+<p>4、可用java -version判断环境（path）是否配置成功</p>
+<h4 id="常用DOS命令"><a href="#常用DOS命令" class="headerlink" title="常用DOS命令"></a>常用DOS命令</h4><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">盘符名称：</td>
+<td align="center">盘符切换。E:回车，表示切换到E盘</td>
+</tr>
+<tr>
+<td align="center">cd 目录</td>
+<td align="center">进入下级目录</td>
+</tr>
+<tr>
+<td align="center">cd 目录</td>
+<td align="center">进入下级目录</td>
+</tr>
+<tr>
+<td align="center">tab</td>
+<td align="center">自动补齐名称</td>
+</tr>
+<tr>
+<td align="center">方向键↑  ↓</td>
+<td align="center">查找已经敲过的命令</td>
+</tr>
+<tr>
+<td align="center">javac 文件名.java</td>
+<td align="center">编译</td>
+</tr>
+<tr>
+<td align="center">java 文件名（不含后缀）</td>
+<td align="center">运行</td>
+</tr>
+<tr>
+<td align="center">cls</td>
+<td align="center">清屏</td>
+</tr>
+<tr>
+<td align="center">exit</td>
+<td align="center">退出命令提示符窗口</td>
+</tr>
+<tr>
+<td align="center">dir</td>
+<td align="center">查看当前路径下的内容</td>
+</tr>
+<tr>
+<td align="center">mkdir 文件名</td>
+<td align="center">在当前路径下新建文件</td>
+</tr>
+<tr>
+<td align="center">cd ..</td>
+<td align="center">返回上级目录</td>
+</tr>
+<tr>
+<td align="center">cd 目录1\目录2..</td>
+<td align="center">进入多级目录 cd code\study</td>
+</tr>
+<tr>
+<td align="center">cd /</td>
+<td align="center">回退到盘符目录</td>
+</tr>
+</tbody></table>
 <hr>
 <h3 id="1、Java语言简介"><a href="#1、Java语言简介" class="headerlink" title="1、Java语言简介"></a>1、Java语言简介</h3><p>Sun公司于1995年研发Java，创始人之一是被喻为Java之父的James Gosling（詹姆斯·高斯林）。2009年，Sun公司被Oracle（甲骨文）公司收购，Java的官网也随之更改为<a href="http://www.oracle.com" target="_blank" rel="noopener">www.oracle.com</a></p>
 <p>Java语言的核心优势是允许跨平台使用。其原理是利用Java编辑器将文件编译成与平台无关的字节码文件（后缀为.class），然后通过在不同的操作系统上安装相应的Java虚拟机（JVM），从而使Java能顺利的在多种平台顺利运行。简而言之，一次编译，多处使用。</p>
 <p>Java最初版本为Java 1.0，发展到1.5时有了重大的更新，进入发展快车道，因此更名为Java 5.0。尽管现在Java版本已经到了Java 13，但版本过高会加大客户的使用成本，为了方便客户使用，目前大多数企业以Java 8.0为主，因为Java 8.0更新了许多新的特性，处于承上启下的版本。不过，目前学习阶段，推荐以Java 11为主。 </p>
 <p>JDK为JAVA开发环境，JRE为Java运行环境，JVM为Java虚拟机</p>
+<p>JDK = JRE+开发工具</p>
+<p>JRE = JVM+</p>
 <hr>
 <h3 id="2、【练习】-Hello-World"><a href="#2、【练习】-Hello-World" class="headerlink" title="2、【练习】    Hello World"></a>2、【练习】    Hello World</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//入门经典程序</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintHelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -317,6 +396,94 @@
       
           <hr>
 <h2 id="Html"><a href="#Html" class="headerlink" title="Html"></a>Html</h2><h3 id="Html中，空格有专门的编码，输入-amp-nbsp代表一个空格"><a href="#Html中，空格有专门的编码，输入-amp-nbsp代表一个空格" class="headerlink" title="Html中，空格有专门的编码，输入&amp;nbsp代表一个空格"></a>Html中，空格有专门的编码，输入&amp;nbsp代表一个空格</h3>
+      
+    </div>
+
+    
+    
+    
+
+	<div>
+	<div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/13/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/xing.jpg">
+      <meta itemprop="name" content="浅枫">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Maple">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/13/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">学习方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-13 08:27:29" itemprop="dateCreated datePublished" datetime="2020-06-13T08:27:29+08:00">2020-06-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-18 14:17:27" itemprop="dateModified" datetime="2020-06-18T14:17:27+08:00">2020-06-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="学习的本质是思考与记忆"><a href="#学习的本质是思考与记忆" class="headerlink" title="学习的本质是思考与记忆"></a>学习的本质是思考与记忆</h3><hr>
+<h3 id="学习五步骤"><a href="#学习五步骤" class="headerlink" title="学习五步骤"></a>学习五步骤</h3><h4 id="1、选择性记录"><a href="#1、选择性记录" class="headerlink" title="1、选择性记录"></a>1、选择性记录</h4><p>时间有限，选择记录还是思考，需要根据具体情况决定</p>
+<p>已掌握的知识</p>
+<p>【查漏】主要重心在思考上，因为已经掌握了，可不做笔记，但需注意是否有遗漏的点</p>
+<p>未掌握的知识需要分情况记录：</p>
+<p>【思考与记录】如果知识点很新，有思维启发</p>
+<p>【思考】如果手头上有资料，重心应放在思考上，可做标记，辅助后期回顾</p>
+<p>【记录】如果短期内很难理解，又没有资料，重心在记录上，后期根据笔记深入学习</p>
+<h4 id="2、关键点提取"><a href="#2、关键点提取" class="headerlink" title="2、关键点提取"></a>2、关键点提取</h4><p>主要用于后期回顾</p>
+<h4 id="3、疑问与思考"><a href="#3、疑问与思考" class="headerlink" title="3、疑问与思考"></a>3、疑问与思考</h4><p>思考越多收获越大，解决的疑问越多掌握的越好</p>
+<h4 id="4、关键点回顾"><a href="#4、关键点回顾" class="headerlink" title="4、关键点回顾"></a>4、关键点回顾</h4><p>性价比最高的步骤，能想起来的知识越多，说明知识掌握的越好</p>
+<h4 id="5、定期复习"><a href="#5、定期复习" class="headerlink" title="5、定期复习"></a>5、定期复习</h4><p>利用多次重复克服遗忘，核心是不依赖于工具，直接用大脑回忆</p>
+<p>方式：</p>
+<ol>
+<li><p>睡前记忆</p>
+</li>
+<li><p>碎片时间记忆</p>
+</li>
+</ol>
+<hr>
+<h3 id="编程学习"><a href="#编程学习" class="headerlink" title="编程学习"></a>编程学习</h3><p>先记方法的功能，再根据中文回忆方法名</p>
+
       
     </div>
 
@@ -567,7 +734,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -696,10 +863,6 @@
   
   
   
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
-
 
 	
 
